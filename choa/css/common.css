@@ -1,0 +1,470 @@
+main>#kv-desc {
+    justify-content: flex-start;
+}
+
+header.subpage-header nav {
+    margin-bottom: 0;
+}
+
+header.subpage-header nav ul {
+    padding-top: 1rem;
+}
+
+.subpage-kv {
+    background: pink;
+    max-width: 72rem;
+    height: 30.5rem;
+}
+
+.subpage-main .date-text {
+    width: 72rem;
+    margin-bottom: 3.4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .subpage-main .date-text {
+        width: 100%;
+        margin-bottom: 1.8rem;
+        padding-left: 3%;
+    }
+}
+
+.article-main .breadcrumb {}
+
+.subpage-main .breadcrumb {
+
+    margin-bottom: 2.4rem;
+    margin-right: 8.6rem;
+}
+
+@media screen and (max-width: 1190px) {
+    .subpage-main .breadcrumb {
+        margin-right: 11.6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .subpage-main .breadcrumb {
+        margin-left: -3rem;
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.subpage-main #sidebar {
+    /* padding-bottom: 9rem; */
+}
+
+.subpage-main #main-section {
+    padding-top: 1.3rem;
+    justify-content: flex-start;
+}
+
+.subpage-main #main-section h2 {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 2rem;
+    padding-left: 0;
+}
+
+.subpage-main #main-section h2.infomation {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .subpage-main #main-section h2 {
+        margin-bottom: 2rem;
+    }
+
+    .subpage-main #main-section h2.sp-line-2 {
+        /* margin-bottom: 4.4rem; */
+    }
+}
+
+.subpage-main #main-section h2.news {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .subpage-main #main-section h2.news {
+        margin-bottom: 1.2rem;
+    }
+
+    .subpage-section h2.subpage-h2::after {
+        left: 0;
+    }
+}
+
+.subpage-main #main-section h1 {
+    font-size: 1.8rem;
+    display: inline-block;
+    padding: 1.7rem 4rem;
+    margin: 0;
+}
+
+.subpage-main #main-section h1.main-title {
+    font-size: 2.6rem;
+    /* line-height: 1.8; */
+}
+
+@media screen and (max-width: 768px) {
+    .subpage-main #main-section h1.main-title {
+        font-size: 2rem;
+    }
+}
+
+.subpage-main #subpage-kv-section .contact-text p {
+    margin-right: 12rem;
+}
+
+@media screen and (max-width: 768px) {
+    .subpage-main #subpage-kv-section .contact-text p {
+        margin-right: 0;
+    }
+}
+
+.subpage-main #subpage-kv-section .kv-text p {
+    margin-right: 0;
+}
+
+.subpage-main #subpage-kv-section .kv-text p:first-of-type {
+    margin-right: 0;
+    margin-bottom: 3rem;
+}
+
+.subpage-main .kv-text p {
+    margin-top: 2.8rem;
+}
+
+.subpage-main .kv-text p:first-of-type {
+    margin-top: 0;
+}
+
+.subpage-main .kv-text p:last-of-type {
+    margin-bottom: 3.4rem;
+}
+
+
+
+.subpage-main #point-article {
+    padding-top: .7rem;
+    margin-top: .5rem;
+}
+
+.subpage-main #point-article h2 {
+    margin-right: 5.6rem;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .subpage-main #point-article h2 {
+        margin-right: 2rem;
+    }
+}
+
+.subpage-main .subpage-section .table_type1 {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+.subpage-main .subpage-section .table_type1 tbody{
+    width: 100%;
+    white-space: nowrap;
+}
+
+.subpage-main .subpage-section .table_type1 th,
+.subpage-main .subpage-section .table_type1 td {
+    border: 1px solid #333;
+    text-align: left;
+    padding: .8rem .9rem;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+
+    .subpage-main .subpage-section .table_type1 th,
+    .subpage-main .subpage-section .table_type1 td {
+        display: block;
+        border-top: none;
+    }
+
+    .subpage-main .subpage-section .table_type1 tbody.cell th,
+    .subpage-main .subpage-section .table_type1 tbody.cell td {
+        display: table-cell;
+        border-top: none;
+        padding: .5rem;
+    }
+}
+
+.subpage-section .table_type1 th {
+
+    background-color: #F1F1F1;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    .subpage-main .subpage-section .table_type1 tr:first-of-type th {
+        border-top: 1px solid #333;
+    }
+}
+
+.table_type2 {
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.table_type2 tbody {
+    border-top: 2px solid #67738E;
+    border-bottom: 2px solid #67738E;
+}
+
+.table_type2 th,
+.table_type2 td {
+    border-right: 0;
+    border-left: 0;
+    text-align: left;
+    padding-left: .9rem;
+    padding-right: .9rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 60%;
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .table_type2 th,
+    .table_type2 td {
+        display: block;
+        border-top: none;
+    }
+
+    .table_type2 tbody.cell th,
+    .table_type2 tbody.cell td {
+        display: table-cell;
+        border-top: none;
+        font-size: 1rem;
+        padding: .5rem;
+    }
+}
+
+.table_type2 tr {
+    border-bottom: 1px solid #bdbdbd;
+    display: flex;
+    align-items: center;
+}
+.table_type2 tr:last-of-type {
+    border-bottom: none;
+}
+
+.table_type2 th {
+    line-height: 1.6;
+    width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .table_type2 tr th {
+        width: 35%;
+    }
+}
+
+.table_type2 tr:last-of-type td {
+    border-bottom: 0;
+}
+
+
+.table_type3 {
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.table_type3 tbody {}
+
+.table_type3 th,
+.table_type3 td {
+    border-right: 0;
+    border-left: 0;
+    text-align: left;
+    padding-left: .9rem;
+    padding-right: .9rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+
+    .table_type3 th,
+    .table_type3 td {
+        display: block;
+    }
+
+    .table_type3 tbody.cell th,
+    .table_type3 tbody.cell td {
+        display: table-cell;
+        border-top: none;
+        font-size: 1rem;
+        padding: .5rem;
+    }
+}
+
+.table_type3 tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.table_type3 th {
+    border: 2px solid #67738E;
+    border-right: none;
+    border-left: none;
+    line-height: 1.6;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .table_type3 tr:first-of-type th {}
+}
+
+.table_type3 ul li {
+    border-bottom: 1px solid #cbcbcb;
+    align-items: center;
+    display: flex;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+.table_type3 ul li span:nth-of-type(2) {
+    font-size: 1.4rem;
+    width: 12%;
+    padding: 3px 10px !important;
+    color: #FFF;
+    font-weight: 700;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 7rem;
+}
+
+@media screen and (max-width: 768px) {
+    .table_type3 ul li span:nth-of-type(2) {
+        width: 35%;
+        margin-right: 1.4rem;
+    }
+}
+
+.table_type3 ul li span:nth-of-type(3) {
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.table_type3 span.prefectures {
+    width: 15%;
+    display: inline-block;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .table_type3 span.prefectures {
+        width: 31%;
+    }
+}
+
+.table_type3 span.text {
+    width: 66%;
+    display: inline-block;
+}
+
+.table_type3 li span:nth-of-type(2) {
+    display: inline-block;
+}
+
+.icon-red {
+    background-color: #FF5F5F;
+}
+
+.icon-gray {
+    background-color: #C6C6C6;
+}
+
+.icon-blue {
+    background-color: #396EFF;
+}
+
+.icon-green {
+    background-color: #50CC76;
+}
+
+.icon-navy {
+    background-color: #657390;
+}
+
+.new-tag {
+    background-color: #FF5F5F;
+    padding: .4rem;
+    color: #fff;
+}
+
+
+
+
+
+#subpage-kv-section .kv-wrapper {
+    background-color: pink;
+    background-size: cover;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 5.6rem;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3.2rem;
+    width: 72rem;
+    height: 30.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    #subpage-kv-section .kv-wrapper {
+        margin-right: 0;
+        margin-bottom: 1.8rem;
+        width: 100%;
+    }
+}
+
+
+#subpage-kv-section .kv-wrapper-contact {
+    background: url(../img/subpage/contact-kv.png);
+}
+
+#subpage-kv-section .kv-wrapper-unei {
+    background: url(../img/subpage/unei-kv.png);
+}
+
+#subpage-kv-section .kv-wrapper-kouhochi {
+    background: url(../img/subpage/kouhochi-kv.png);
+}
+
+#subpage-kv-section h1 {
+    font-weight: 500;
+    background: rgba(0, 0, 0, .4);
+    color: white;
+    text-align: center;
+    line-height: 1.4;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.subpage-main p {
+    letter-spacing: 1px;
+}
+
+.subpage-header {
+    padding-bottom: 0;
+}
