@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>choa</title>
+        <meta name="description" content="ページの内容を表す文章" />
+        <meta property="og:url" content="ページのURL" />
+        <meta property="og:title" content="ページのタイトル" />
+        <meta property="og:type" content="ページのタイプ" />
+        <meta property="og:description" content="記事の抜粋" />
+        <meta property="og:image" content="画像のURL" />
+        <meta name="twitter:card" content="カード種類" />
+        <meta name="twitter:site" content="@Twitterユーザー名" />
+        <meta property="og:site_name" content="サイト名" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta property="fb:app_id" content="appIDを入力" />
+        <link rel="canonical" href="正規化するURL" />
+        <link rel="icon" type="image/png" sizes="16x16" href="画像URL" />
+        <link rel="icon" type="image/png" sizes="32x32" href="画像URL" />
+        <link rel="icon" type="image/png" sizes="48x48" href="画像URL" />
+        <link rel="icon" type="image/png" sizes="62x62" href="画像URL" />
+        <link rel="apple-touch-icon-precomposed" href="画像のURL" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <meta name="msapplication-TileImage" content="画像のURL" />
+        <meta
+            name="msapplication-TileColor"
+            content="カラーコード（例：#F89174）"
+        />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/custom-reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <!-- ハンバーガー -->
+            <div class="inner">
+                <div class="openbtn1"><span></span><span></span><span></span></div>
+                <div class="logo-wrapper">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="ロゴ">
+                    </a>
+                </div>
+                <div class="serch-wrapper">
+                    <img src="img/streamline-icon-search-1.png" alt="サーチマーク">
+                </div>
+            </div>
+            <!-- ハンバーガーメニュー中身 -->
+            <div class="sp-menu">
+                <ul class="menu-wrapper">
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="profile.html">マイページ</a></li>
+                    <li><a href="choa-look.html">チョアルック</a></li>
+                            <!-- <li><a>飲食店人気ランキング</a></li>
+                            <li><a>ユーザー人気ランキング</a></li>
+                            <li><a>ユーザー人気ランキング</a></li> -->
+                    <li>
+                        <div class="cp-section">
+                            <div class="cp-container cp-accordion01">
+                                <dl class="cp-accordion01__item">
+                                    <dt class="cp-accordion01__title js-cp-accordion01__title link-list">
+                                        ランキング
+                                    </dt>
+                                    <dd class="cp-accordion01__content">
+                                        <dl class="cp-accordion01__item">
+                                            <dt class="cp-accordion01__title js-cp-accordion01__title link-list">
+                                                コスメ別ランキング
+                                            </dt>
+                                            <dd class="cp-accordion01__content find-list">
+                                                <ul id="hide-list-item02">
+                                                    <li><a href="find-category.html">カテゴリから探す</a></li>
+                                                    <li><a href="find-brand.html">ブランドから探す</a></li>
+                                                    <li><a href="find-ranking.html">ランキングから探す</a></li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="cp-accordion01__item">
+                                            <dt class="cp-accordion01__title js-cp-accordion01__title">
+                                                年代別ランキング
+                                            </dt>
+                                            <dd class="cp-accordion01__content find-list">
+                                                <ul id="hide-list-item02">
+                                                    <li><a href="find-category.html">カテゴリから探す</a></li>
+                                                    <li><a>ブランドから探す</a></li>
+                                                    <li><a>ランキングから探す</a></li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="cp-accordion01__item">
+                                            <dt class="cp-accordion01__title js-cp-accordion01__title">
+                                                カテゴリー別ランキング
+                                            </dt>
+                                            <dd class="cp-accordion01__content find-list">
+                                                <ul id="hide-list-item02">
+                                                    <li><a href="find-category.html">カテゴリから探す</a></li>
+                                                    <li><a>ブランドから探す</a></li>
+                                                    <li><a>ランキングから探す</a></li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html">※メモ　商品画面</a>
+                    </li>
+
+                    <!-- <li><a>ブログ</a></li> -->
+                </ul>
+
+            </div>
+        </header>
+        <main id="rank-brand-main">
+            <section>
+                <form class="form-box">
+                    <input class="form-input" type="search">
+                    <button class="form-button"><img src="img/icon-serch-bl.png" width="20px" height="20px"></button>
+                </form>
+                <h3 class="left-border-title">
+                    ブランド別ランキング
+                </h3>
+                <div class="select-wrapper">
+                    月選択：
+                    <select name="month">
+                        <option value="all-month">2022年トータル</option>
+                        <option value="jan">2022年1月</option>
+                        <option value="feb">2022年2月</option>
+                        <option value="mar">2022年3月</option>
+                        <option value="apr">2022年4月</option>
+                        <option value="may">2022年5月</option>
+                        <option value="jun">2022年6月</option>
+                        <option value="jul">2022年7月</option>
+                        <option value="aug">2022年8月</option>
+                        <option value="sep">2022年9月</option>
+                        <option value="oct">2022年10月</option>
+                        <option value="nov">2022年11月</option>
+                        <option value="dec">2022年12月</option>
+                    </select>
+                </div>
+                <ul class="brand-rank-list">
+                    <li>
+                        <a href="#" class="list-inner">
+                            <div class="image-wrapper">
+                                <img src="img/brand-logo/innisfree.png" alt="">
+                            </div>
+                            <p>イニスフリー（innisfree）</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-inner">
+                            <div class="image-wrapper">
+                                <img src="img/brand-logo/ETUDEHOUSE.png" alt="">
+                            </div>
+                            <p>エチュードハウス（ETUDE HOUSE）</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-inner">
+                            <div class="image-wrapper">
+                                <img src="img/brand-logo/thesaem.png" alt="">
+                            </div>
+                            <p> ザ セム（the SAEM）</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-inner">
+                            <div class="image-wrapper">
+                                <img src="img/brand-logo/innisfree.png" alt="">
+                            </div>
+                            <p>イニスフリー（innisfree）</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-inner">
+                            <div class="image-wrapper">
+                                <img src="img/brand-logo/innisfree.png" alt="">
+                            </div>
+                            <p>イニスフリー（innisfree）</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-inner">
+                            <div class="image-wrapper">
+                                <img src="img/brand-logo/innisfree.png" alt="">
+                            </div>
+                            <p>イニスフリー（innisfree）</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-inner">
+                            <div class="image-wrapper">
+                                <img src="img/brand-logo/innisfree.png" alt="">
+                            </div>
+                            <p>イニスフリー（innisfree）</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-inner">
+                            <div class="image-wrapper">
+                                <img src="img/brand-logo/innisfree.png" alt="">
+                            </div>
+                            <p>イニスフリー（innisfree）</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-inner">
+                            <div class="image-wrapper">
+                                <img src="img/brand-logo/innisfree.png" alt="">
+                            </div>
+                            <p>イニスフリー（innisfree）</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-inner">
+                            <div class="image-wrapper">
+                                <img src="img/brand-logo/innisfree.png" alt="">
+                            </div>
+                            <p>イニスフリー（innisfree）</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-inner">
+                            <div class="image-wrapper">
+                                <img src="img/brand-logo/innisfree.png" alt="">
+                            </div>
+                            <p>イニスフリー（innisfree）</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-inner">
+                            <div class="image-wrapper">
+                                <img src="img/brand-logo/innisfree.png" alt="">
+                            </div>
+                            <p>イニスフリー（innisfree）</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-inner">
+                            <div class="image-wrapper">
+                                <img src="img/brand-logo/innisfree.png" alt="">
+                            </div>
+                            <p>イニスフリー（innisfree）</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-inner">
+                            <div class="image-wrapper">
+                                <img src="img/brand-logo/innisfree.png" alt="">
+                            </div>
+                            <p>イニスフリー（innisfree）</p>
+                        </a>
+                    </li>
+                 
+                </ul>
+                <div class="button-wrapper">
+                    <a class="more-button" href="#">
+                        もっと見る
+                    </a>
+                </div>
+            </section>
+            <section id="brand-all">
+                <h3 class="left-border-title">
+                    ブランド一覧
+                </h3>
+
+                <div class="image-with-text aco-menu-wrapper">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="image-wrapper">
+                                    <img src="img/brand-logo/innisfree.png" alt="">
+                                </div>
+                                <p>
+                                    イニスフリー（innisfree）<span></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="image-wrapper">
+                                    <img src="img/brand-logo/innisfree.png" alt="">
+                                </div>
+                                <p>
+                                    イニスフリー（innisfree）<span></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="image-wrapper">
+                                    <img src="img/brand-logo/innisfree.png" alt="">
+                                </div>
+                                <p>
+                                    イニスフリー（innisfree）<span></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="image-wrapper">
+                                    <img src="img/brand-logo/innisfree.png" alt="">
+                                </div>
+                                <p>
+                                    イニスフリー（innisfree）<span></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="image-wrapper">
+                                    <img src="img/brand-logo/innisfree.png" alt="">
+                                </div>
+                                <p>
+                                    イニスフリー（innisfree）<span></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="image-wrapper">
+                                    <img src="img/brand-logo/innisfree.png" alt="">
+                                </div>
+                                <p>
+                                    イニスフリー（innisfree）<span></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="image-wrapper">
+                                    <img src="img/brand-logo/innisfree.png" alt="">
+                                </div>
+                                <p>
+                                    イニスフリー（innisfree）<span></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="image-wrapper">
+                                    <img src="img/brand-logo/innisfree.png" alt="">
+                                </div>
+                                <p>
+                                    イニスフリー（innisfree）<span></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="image-wrapper">
+                                    <img src="img/brand-logo/innisfree.png" alt="">
+                                </div>
+                                <p>
+                                    イニスフリー（innisfree）<span></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="image-wrapper">
+                                    <img src="img/brand-logo/innisfree.png" alt="">
+                                </div>
+                                <p>
+                                    イニスフリー（innisfree）<span></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="image-wrapper">
+                                    <img src="img/brand-logo/innisfree.png" alt="">
+                                </div>
+                                <p>
+                                    イニスフリー（innisfree）<span></span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button-wrapper">
+                    <a class="more-button" href="#">
+                        もっと見る
+                    </a>
+                </div>
+
+            </section>
+
+
+        </main>
+        <footer id="footer" class="footer">
+            <section id="sns">
+                <p>SNSをフォローして最新情報をチェック！</p>
+                <ul class="sns-list">
+                    <li>
+                        <a href="#">
+                            <img src="img/tiktok_logo_icon_186896.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/TW_ICON-09a6da5d16a3baeb3cb1e1cd851ca51bf52f4d290816b4ce0f6fb4792d05b666.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://instagram.com/choa_kr?igshid=YmMyMTA2M2Y=">
+                            <img src="img/IG_ICON-762b9205f04c693202744d0137f26dc523b233ef22363fcd5f5c2c546c5642d0.png" alt="">
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">
+                            <img src="img/YT_ICON-5a25bf8cf322a0aa47866deeb2c0574c28e48b12f75700ad6e416abb3ad2a95b.png" alt="">
+                        </a>
+                    </li> -->
+                </ul>
+            </section>
+            <section id="site-map">
+                <ul>
+                    <li><a href="#">タグから探す</a></li>
+                    <li><a href="#">テーマから探す</a></li>
+                    <li><a href="#">カテゴリから探す</a></li>
+                    <li><a href="#">ブランドから探す</a></li>
+                    <li><a href="#">商品ランキングを見る</a></li>
+                    <li><a href="#">記事を見る</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">利用規約</a></li>
+                    <li><a href="#">プライバシーポリシー</a></li>
+                    <li><a href="#">コミュニティガイドライン</a></li>
+                    <li><a href="#">特定商取引法に基づく表示</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="#">運営会社</a></li>
+                </ul>
+                
+            </section>
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <p class="copy-right">Copyright © 2021 choa Inc.
+                All Rights Reserved.</p>
+            <ul class="icon-wrapper">
+                <li class="item"><a href="index.html"><img src="img/footer-icon-house.png" alt=""></a></li>
+                <li class="item"><a href="index.html"><img src="img/footer-icon-heart.png" alt=""></a></li>
+                <li class="item"><a href="index.html"><img src="img/footer-icon-serch.png" alt=""></a></li>
+                <li class="item"><a href="index.html"><img src="img/footer-icon-smile.png" alt=""></a></li>
+            </ul>
+            <div class="add-info">
+                <p>
+                    お気に入りに追加しました
+                </p>
+            </div>
+        </footer>
+        <!-- <img class="bg-img" src="./トップページ.jpg" alt="" /> -->
+
+        <a href="product.html">商品画面</a>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-2-1/js/5-2-1.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
