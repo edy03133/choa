@@ -63,33 +63,49 @@
                     <li>
                         <div class="cp-section">
                             <div class="cp-container cp-accordion01">
-                                <!-- アイテム -->
                                 <dl class="cp-accordion01__item">
-                                    <!-- 見出し -->
                                     <dt class="cp-accordion01__title js-cp-accordion01__title link-list">
                                         ランキング
-                                        <!-- アイコン -->
-                                        <div class="cp-accordion01__icon">
-                                        </div><!-- /アイコン -->
-                                    </dt><!-- /見出し -->
-                                    <!-- コンテンツ -->
+                                    </dt>
                                     <dd class="cp-accordion01__content">
                                         <dl class="cp-accordion01__item">
                                             <dt class="cp-accordion01__title js-cp-accordion01__title link-list">
-                                                コスメランキング
-                                                <div class="cp-accordion01__icon">
-                                                </div><!-- /アイコン -->
-                                            </dt><!-- /見出し -->
+                                                コスメ別ランキング
+                                            </dt>
+                                            <dd class="cp-accordion01__content find-list">
+                                                <ul id="hide-list-item02">
+                                                    <li><a href="find-category.html">カテゴリから探す</a></li>
+                                                    <li><a href="find-brand.html">ブランドから探す</a></li>
+                                                    <li><a href="find-ranking.html">ランキングから探す</a></li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="cp-accordion01__item">
+                                            <dt class="cp-accordion01__title js-cp-accordion01__title">
+                                                年代別ランキング
+                                            </dt>
                                             <dd class="cp-accordion01__content find-list">
                                                 <ul id="hide-list-item02">
                                                     <li><a href="find-category.html">カテゴリから探す</a></li>
                                                     <li><a>ブランドから探す</a></li>
                                                     <li><a>ランキングから探す</a></li>
                                                 </ul>
-                                            </dd><!-- /コンテンツ -->
-                                        </dl><!-- /アイテム -->
-                                    </dd><!-- /コンテンツ -->
-                                </dl><!-- /アイテム -->
+                                            </dd>
+                                        </dl>
+                                        <dl class="cp-accordion01__item">
+                                            <dt class="cp-accordion01__title js-cp-accordion01__title">
+                                                カテゴリー別ランキング
+                                            </dt>
+                                            <dd class="cp-accordion01__content find-list">
+                                                <ul id="hide-list-item02">
+                                                    <li><a href="find-category.html">カテゴリから探す</a></li>
+                                                    <li><a>ブランドから探す</a></li>
+                                                    <li><a>ランキングから探す</a></li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </dd>
+                                </dl>
                             </div>
                         </div>
                     </li>
@@ -102,31 +118,71 @@
 
             </div>
         </header>
-        <main id="old-ranking-main">
-            <section id="rank-list">
-                <h3 class="rank-title">年代別ランキング</h3>
-
-            <ul class="tab">
-                <li><a href="#rank-10years">10代</a></li>
-                <li><a href="#rank-20years">20代</a></li>
-                <li><a href="#rank-30years">30代</a></li>
-                <li><a href="#rank-40years-over">40代~</a></li>
-            </ul>
-
-            <div class="serch-wrapper-rank">
-                <div class="">
-                    <select name="sources" id="sources" class="custom-select sources" placeholder="カテゴリで絞り込む">
-                      <option value="">全体カテゴリー</option>
-                      <option value="">スキンケア</option>
-                      <option value="">化粧水</option>
-                      <option value="">クレンジング</option>
-                      <option value="">シートマスク</option>
-                      <option value="">化粧下地</option>
-                    </select>
+        <main id="brand-item-main">
+            <section>
+                <!-- ブランドロゴ -->
+                <div class="brand-top-image-wrapper">
+                    <div class="brand-top-image">
+                        <img src="img/brand-logo/innisfree.png" alt="">
+                    </div>
+                    <a class="favo-button" href="#">
+                        <img src="img/icon-star.png" alt="">
+                    </a>
                 </div>
-            </div>
-            <div id="rank-10years" class="area">
+                <h2>イニスフリー（innisfree）</h2>
+
+
+
+
+                <div class="serch-wrapper-rank">
+                    <div class="">
+                        <select name="sources" id="sources" class="custom-select sources" placeholder="カテゴリで絞り込む">
+                          <option value="">全体カテゴリー</option>
+                          <option value="">スキンケア</option>
+                          <option value="">化粧水</option>
+                        </select>
+                    </div>
+                    <form class="form-box">
+                        <input class="form-input" type="search" placeholder="ワードで絞り込む">
+                        <button class="form-button"><img src="img/icon-serch-bl.png" width="20px" height="20px"></button>
+                    </form>
+                </div>
+                <div class="result-wrapper">
+                    <p>3,310件 / 5000件中</p>
+                    <div class="">
+                        <select name="sources" id="sources" class="custom-select sources" placeholder="並び替え">
+                          <option value="">ランキング</option>
+                          <option value="">レビュー数</option>
+                          <option value="">新着</option>
+                        </select>
+                    </div>
+                </div>
+
                 <ul id="ranking">
+                    <li>
+                        <a href="product.html">
+                            <div class="wrapper">
+                                <div class="image">
+                                    <img src="img/sample-product01.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Dior</p>
+                                    <p>サンク クルール クチュール</p>
+                                    <div class="evaluation-wrapper">
+                                        <div class="star">
+                                            <img src="img/star.png" alt="">
+                                        </div>
+                                        <p class="rate">4.0</p>
+                                        <div class="comment">
+                                            <img src="img/comment.png" alt="">
+                                        </div>
+                                        <p class="comment-number">10件</p>
+                                    </div>
+                                    <p class="price">8,360円(税込)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
                     <li>
                         <a href="#">
                             <div class="wrapper">
@@ -134,7 +190,103 @@
                                     <img src="img/sample-product01.jpg" alt="">
                                 </div>
                                 <div class="text">
-                                    <p>Dior10代</p>
+                                    <p>Dior</p>
+                                    <p>サンク クルール クチュール</p>
+                                    <div class="evaluation-wrapper">
+                                        <div class="star">
+                                            <img src="img/star.png" alt="">
+                                        </div>
+                                        <p class="rate">4.0</p>
+                                        <div class="comment">
+                                            <img src="img/comment.png" alt="">
+                                        </div>
+                                        <p class="comment-number">10件</p>
+                                    </div>
+                                    <p class="price">8,360円(税込)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="wrapper">
+                                <div class="image">
+                                    <img src="img/sample-product01.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Dior</p>
+                                    <p>サンク クルール クチュール</p>
+                                    <div class="evaluation-wrapper">
+                                        <div class="star">
+                                            <img src="img/star.png" alt="">
+                                        </div>
+                                        <p class="rate">4.0</p>
+                                        <div class="comment">
+                                            <img src="img/comment.png" alt="">
+                                        </div>
+                                        <p class="comment-number">10件</p>
+                                    </div>
+                                    <p class="price">8,360円(税込)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="wrapper">
+                                <div class="image">
+                                    <img src="img/sample-product01.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Dior</p>
+                                    <p>サンク クルール クチュール</p>
+                                    <div class="evaluation-wrapper">
+                                        <div class="star">
+                                            <img src="img/star.png" alt="">
+                                        </div>
+                                        <p class="rate">4.0</p>
+                                        <div class="comment">
+                                            <img src="img/comment.png" alt="">
+                                        </div>
+                                        <p class="comment-number">10件</p>
+                                    </div>
+                                    <p class="price">8,360円(税込)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="wrapper">
+                                <div class="image">
+                                    <img src="img/sample-product01.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Dior</p>
+                                    <p>サンク クルール クチュール</p>
+                                    <div class="evaluation-wrapper">
+                                        <div class="star">
+                                            <img src="img/star.png" alt="">
+                                        </div>
+                                        <p class="rate">4.0</p>
+                                        <div class="comment">
+                                            <img src="img/comment.png" alt="">
+                                        </div>
+                                        <p class="comment-number">10件</p>
+                                    </div>
+                                    <p class="price">8,360円(税込)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="wrapper">
+                                <div class="image">
+                                    <img src="img/sample-product01.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Dior</p>
                                     <p>サンク クルール クチュール</p>
                                     <div class="evaluation-wrapper">
                                         <div class="star">
@@ -248,380 +400,8 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div id="rank-20years" class="area">
-                <ul id="ranking">
-                    <li>
-                        <a href="#">
-                            <div class="wrapper">
-                                <div class="image">
-                                    <img src="img/sample-product01.jpg" alt="">
-                                </div>
-                                <div class="text">
-                                    <p>Dior20代</p>
-                                    <p>サンク クルール クチュール</p>
-                                    <div class="evaluation-wrapper">
-                                        <div class="star">
-                                            <img src="img/star.png" alt="">
-                                        </div>
-                                        <p class="rate">4.0</p>
-                                        <div class="comment">
-                                            <img src="img/comment.png" alt="">
-                                        </div>
-                                        <p class="comment-number">10件</p>
-                                    </div>
-                                    <p class="price">8,360円(税込)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="wrapper">
-                                <div class="image">
-                                    <img src="img/sample-product01.jpg" alt="">
-                                </div>
-                                <div class="text">
-                                    <p>Dior</p>
-                                    <p>サンク クルール クチュール</p>
-                                    <div class="evaluation-wrapper">
-                                        <div class="star">
-                                            <img src="img/star.png" alt="">
-                                        </div>
-                                        <p class="rate">4.0</p>
-                                        <div class="comment">
-                                            <img src="img/comment.png" alt="">
-                                        </div>
-                                        <p class="comment-number">10件</p>
-                                    </div>
-                                    <p class="price">8,360円(税込)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="wrapper">
-                                <div class="image">
-                                    <img src="img/sample-product01.jpg" alt="">
-                                </div>
-                                <div class="text">
-                                    <p>Dior</p>
-                                    <p>サンク クルール クチュール</p>
-                                    <div class="evaluation-wrapper">
-                                        <div class="star">
-                                            <img src="img/star.png" alt="">
-                                        </div>
-                                        <p class="rate">4.0</p>
-                                        <div class="comment">
-                                            <img src="img/comment.png" alt="">
-                                        </div>
-                                        <p class="comment-number">10件</p>
-                                    </div>
-                                    <p class="price">8,360円(税込)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="wrapper">
-                                <div class="image">
-                                    <img src="img/sample-product01.jpg" alt="">
-                                </div>
-                                <div class="text">
-                                    <p>Dior</p>
-                                    <p>サンク クルール クチュール</p>
-                                    <div class="evaluation-wrapper">
-                                        <div class="star">
-                                            <img src="img/star.png" alt="">
-                                        </div>
-                                        <p class="rate">4.0</p>
-                                        <div class="comment">
-                                            <img src="img/comment.png" alt="">
-                                        </div>
-                                        <p class="comment-number">10件</p>
-                                    </div>
-                                    <p class="price">8,360円(税込)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="wrapper">
-                                <div class="image">
-                                    <img src="img/sample-product01.jpg" alt="">
-                                </div>
-                                <div class="text">
-                                    <p>Dior</p>
-                                    <p>サンク クルール クチュール</p>
-                                    <div class="evaluation-wrapper">
-                                        <div class="star">
-                                            <img src="img/star.png" alt="">
-                                        </div>
-                                        <p class="rate">4.0</p>
-                                        <div class="comment">
-                                            <img src="img/comment.png" alt="">
-                                        </div>
-                                        <p class="comment-number">10件</p>
-                                    </div>
-                                    <p class="price">8,360円(税込)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div id="rank-30years" class="area">
-                <ul id="ranking">
-                    <li>
-                        <a href="#">
-                            <div class="wrapper">
-                                <div class="image">
-                                    <img src="img/sample-product01.jpg" alt="">
-                                </div>
-                                <div class="text">
-                                    <p>Dior30代</p>
-                                    <p>サンク クルール クチュール</p>
-                                    <div class="evaluation-wrapper">
-                                        <div class="star">
-                                            <img src="img/star.png" alt="">
-                                        </div>
-                                        <p class="rate">4.0</p>
-                                        <div class="comment">
-                                            <img src="img/comment.png" alt="">
-                                        </div>
-                                        <p class="comment-number">10件</p>
-                                    </div>
-                                    <p class="price">8,360円(税込)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="wrapper">
-                                <div class="image">
-                                    <img src="img/sample-product01.jpg" alt="">
-                                </div>
-                                <div class="text">
-                                    <p>Dior</p>
-                                    <p>サンク クルール クチュール</p>
-                                    <div class="evaluation-wrapper">
-                                        <div class="star">
-                                            <img src="img/star.png" alt="">
-                                        </div>
-                                        <p class="rate">4.0</p>
-                                        <div class="comment">
-                                            <img src="img/comment.png" alt="">
-                                        </div>
-                                        <p class="comment-number">10件</p>
-                                    </div>
-                                    <p class="price">8,360円(税込)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="wrapper">
-                                <div class="image">
-                                    <img src="img/sample-product01.jpg" alt="">
-                                </div>
-                                <div class="text">
-                                    <p>Dior</p>
-                                    <p>サンク クルール クチュール</p>
-                                    <div class="evaluation-wrapper">
-                                        <div class="star">
-                                            <img src="img/star.png" alt="">
-                                        </div>
-                                        <p class="rate">4.0</p>
-                                        <div class="comment">
-                                            <img src="img/comment.png" alt="">
-                                        </div>
-                                        <p class="comment-number">10件</p>
-                                    </div>
-                                    <p class="price">8,360円(税込)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="wrapper">
-                                <div class="image">
-                                    <img src="img/sample-product01.jpg" alt="">
-                                </div>
-                                <div class="text">
-                                    <p>Dior</p>
-                                    <p>サンク クルール クチュール</p>
-                                    <div class="evaluation-wrapper">
-                                        <div class="star">
-                                            <img src="img/star.png" alt="">
-                                        </div>
-                                        <p class="rate">4.0</p>
-                                        <div class="comment">
-                                            <img src="img/comment.png" alt="">
-                                        </div>
-                                        <p class="comment-number">10件</p>
-                                    </div>
-                                    <p class="price">8,360円(税込)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="wrapper">
-                                <div class="image">
-                                    <img src="img/sample-product01.jpg" alt="">
-                                </div>
-                                <div class="text">
-                                    <p>Dior</p>
-                                    <p>サンク クルール クチュール</p>
-                                    <div class="evaluation-wrapper">
-                                        <div class="star">
-                                            <img src="img/star.png" alt="">
-                                        </div>
-                                        <p class="rate">4.0</p>
-                                        <div class="comment">
-                                            <img src="img/comment.png" alt="">
-                                        </div>
-                                        <p class="comment-number">10件</p>
-                                    </div>
-                                    <p class="price">8,360円(税込)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div id="rank-40years-over" class="area">
-                <ul id="ranking">
-                    <li>
-                        <a href="#">
-                            <div class="wrapper">
-                                <div class="image">
-                                    <img src="img/sample-product01.jpg" alt="">
-                                </div>
-                                <div class="text">
-                                    <p>Dior40代以上</p>
-                                    <p>サンク クルール クチュール</p>
-                                    <div class="evaluation-wrapper">
-                                        <div class="star">
-                                            <img src="img/star.png" alt="">
-                                        </div>
-                                        <p class="rate">4.0</p>
-                                        <div class="comment">
-                                            <img src="img/comment.png" alt="">
-                                        </div>
-                                        <p class="comment-number">10件</p>
-                                    </div>
-                                    <p class="price">8,360円(税込)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="wrapper">
-                                <div class="image">
-                                    <img src="img/sample-product01.jpg" alt="">
-                                </div>
-                                <div class="text">
-                                    <p>Dior</p>
-                                    <p>サンク クルール クチュール</p>
-                                    <div class="evaluation-wrapper">
-                                        <div class="star">
-                                            <img src="img/star.png" alt="">
-                                        </div>
-                                        <p class="rate">4.0</p>
-                                        <div class="comment">
-                                            <img src="img/comment.png" alt="">
-                                        </div>
-                                        <p class="comment-number">10件</p>
-                                    </div>
-                                    <p class="price">8,360円(税込)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="wrapper">
-                                <div class="image">
-                                    <img src="img/sample-product01.jpg" alt="">
-                                </div>
-                                <div class="text">
-                                    <p>Dior</p>
-                                    <p>サンク クルール クチュール</p>
-                                    <div class="evaluation-wrapper">
-                                        <div class="star">
-                                            <img src="img/star.png" alt="">
-                                        </div>
-                                        <p class="rate">4.0</p>
-                                        <div class="comment">
-                                            <img src="img/comment.png" alt="">
-                                        </div>
-                                        <p class="comment-number">10件</p>
-                                    </div>
-                                    <p class="price">8,360円(税込)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="wrapper">
-                                <div class="image">
-                                    <img src="img/sample-product01.jpg" alt="">
-                                </div>
-                                <div class="text">
-                                    <p>Dior</p>
-                                    <p>サンク クルール クチュール</p>
-                                    <div class="evaluation-wrapper">
-                                        <div class="star">
-                                            <img src="img/star.png" alt="">
-                                        </div>
-                                        <p class="rate">4.0</p>
-                                        <div class="comment">
-                                            <img src="img/comment.png" alt="">
-                                        </div>
-                                        <p class="comment-number">10件</p>
-                                    </div>
-                                    <p class="price">8,360円(税込)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="wrapper">
-                                <div class="image">
-                                    <img src="img/sample-product01.jpg" alt="">
-                                </div>
-                                <div class="text">
-                                    <p>Dior</p>
-                                    <p>サンク クルール クチュール</p>
-                                    <div class="evaluation-wrapper">
-                                        <div class="star">
-                                            <img src="img/star.png" alt="">
-                                        </div>
-                                        <p class="rate">4.0</p>
-                                        <div class="comment">
-                                            <img src="img/comment.png" alt="">
-                                        </div>
-                                        <p class="comment-number">10件</p>
-                                    </div>
-                                    <p class="price">8,360円(税込)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+            </section>
+
         </main>
         <footer id="footer" class="footer">
             <section id="sns">
@@ -671,7 +451,8 @@
             <div class="footer-logo">
                 <img src="img/logo.png" alt="">
             </div>
-            <p class="copy-right">Copyright © 2022 choa Inc. All Rights Reserved.</p>
+            <p class="copy-right">Copyright © 2021 choa Inc.
+                All Rights Reserved.</p>
             <ul class="icon-wrapper">
                 <li class="item"><a href="index.html"><img src="img/footer-icon-house.png" alt=""></a></li>
                 <li class="item"><a href="index.html"><img src="img/footer-icon-heart.png" alt=""></a></li>
@@ -686,6 +467,7 @@
         </footer>
         <!-- <img class="bg-img" src="./トップページ.jpg" alt="" /> -->
 
+        <a href="product.html">商品画面</a>
         <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
