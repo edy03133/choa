@@ -372,6 +372,74 @@ ul.icon-wrapper {
 .icon-wrapper li {
     width: 25px;
 }
+/* 検索窓 */
+.search_container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.search_container .serch-input {
+    width: 80%;
+    border: 1px solid #b5b5b5;
+    padding: 8px 20px;
+    padding-left: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #b5b5b5;
+}
+
+.serch-submit {
+    width: 20%;
+    color: #757575;
+}
+
+.serch-top-wrapper .custom-select-trigger {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.serch-top-wrapper .custom-select-wrapper {
+    margin-left: 36px;
+}
+
+.serch-top-wrapper .custom-options {
+    top: 117%;
+}
+
+
+.serch-top-wrapper {
+    background-color: #D4A2C9;
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+  top:-120%;
+    left:0;
+  width:100%;
+    height: 30vh;/*ナビの高さ*/
+  background:#D4A2C9;
+    /*動き*/
+  transition: all 0.6s;
+
+  padding-top: 60px;
+}
+/*アクティブクラスがついたら位置を0に*/
+.serch-top-wrapper.active{
+    top: 0;
+}
+.serch-top-wrapper.active {
+    opacity: 1;
+    z-index: 9999;
+    visibility: visible;
+}
+.openbtn2 {
+    position: relative;
+    /*ボタン内側の基点となるためrelativeを指定*/
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    z-index: 10000;
+}
 
 /* ハンバーガー */
 

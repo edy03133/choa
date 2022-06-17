@@ -42,6 +42,26 @@ $(function() {
   });
 });
 
+// 検索ボックスの記述=============
+$(function(){
+  $('.openbtn2').on('click', function(){
+    $('.serch-top-wrapper').toggleClass('active');
+  });
+}());
+
+$(".openbtn2").click(function () {
+    $(this).toggleClass('active');
+});
+
+let serchWrap = document.getElementsByTagName('openbtn2')[0];
+let serchBox = document.getElementById('.serch-top-wrapper');
+
+let changeElemen = (el)=> {
+  el.classList.toggle('active');
+}
+
+
+
 //任意のタブにURLからリンクするための設定
 function GethashID (hashIDName){
   if(hashIDName){
