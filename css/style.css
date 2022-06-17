@@ -396,9 +396,9 @@ ul.icon-wrapper {
 
 ul.menu-wrapper {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
-    transform: translateY(-25%) translateX(-50%);
+    transform: translateY(-20%) translateX(-50%);
     margin: auto;
     width: 70%;
 }
