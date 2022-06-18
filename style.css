@@ -204,8 +204,6 @@ section#fashion {
     cursor: pointer;
 }
 
-
-
 .slider-item {
     width: 150px;
     /* height: 238px; */
@@ -452,7 +450,8 @@ ul.icon-wrapper {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #D4A2C9;
+    /* background-color: #D4A2C9; */
+    background-color: #eeb6e1;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -476,18 +475,18 @@ ul.menu-wrapper {
 }
 
 ul.menu-wrapper li {
-    padding: 20px 0 15px;
-    border-bottom: 1px solid #fff;
+    padding: 14px 0;
+    border-bottom: 1px dotted #fff;
     font-size: 18px;
     display: flex;
     align-items: center;
 }
 #hide-list-item02 li {
     border-bottom: none;
-    padding: 12px 0;
+    padding: 14px 0 0;
 }
 #hide-list-item02 li:first-of-type {
-    padding-top: 24px;
+    /* padding-top: 24px; */
 }
 #hide-list-item02 li:last-of-type {
     padding-bottom: 0;
@@ -496,11 +495,12 @@ ul.menu-wrapper li {
 ul.menu-wrapper li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 700;
 }
 ul.menu-wrapper li .sp-icon-wrapper{
     margin-right: 10px;
-    margin-bottom: 2px;
+    margin-bottom: px;
 }
 
 ul.ranking-menu {
@@ -544,13 +544,14 @@ ul.ranking-menu {
     padding: 0;
 }
 .cp-accordion01__item {
-    padding: 10px 0 5px;
+    padding: 14px 0 0;
 }
 
 /* 見出し */
 .cp-accordion01__title {
+    font-weight: 700;
     position: relative;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     transition: .2s ease-in-out;
     color: #fff;
@@ -567,14 +568,12 @@ ul.ranking-menu {
 /* コンテンツ */
 .cp-accordion01__content {
     margin-top: 0;
-    padding: 14px;
     display: none;
     padding-left: 0;
     padding-bottom: 0;
 }
 
 .cp-accordion01__content dl {
-    margin-top: 10px;
 }
 .cp-accordion01__content dl:first-of-type {
     margin-top: 0;
@@ -1589,4 +1588,23 @@ color: #fff;
 .sp-icon-wrapper {
     width: 20px;
     height: auto;
+}
+
+ul.menu-wrapper li a.contact-button {
+    display: flex;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-top: 10px;
+
+    color: #ffffff;
+    border: #ffffff dashed 1px;
+    box-shadow: 0 0 0 0.2em #fea7d3;
+    border-radius: 10px;
+    background-color: #fea7d3;
+    cursor: pointer;
+}
+
+ul.menu-wrapper li:last-of-type {
+    border-bottom: none;
 }
